@@ -184,7 +184,7 @@ p {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  background-color: #f1c40f; /* Background if image fails */
+  background-color: #c0392b; /* Reddish background fallback */
 }
 
 .screen-img {
@@ -246,7 +246,7 @@ p {
 }
 
 .pain-filter {
-  filter: sepia(0.3) saturate(2.5) hue-rotate(-20deg) brightness(0.8);
+  filter: brightness(0.8) saturate(2) hue-rotate(-50deg) sepia(0.2);
 }
 
 /* Result Screen */
