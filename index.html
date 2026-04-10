@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>鼻から鼻毛抜きゲーム | 究極の抜き心地</title>
+  <meta name="description" content="15秒間の限界に挑め！シンプルだけどクセになる、究極の鼻毛抜きゲーム。">
+  
+  <!-- UI Styling -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- React & Dependencies -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root">
+    <!-- ローディング表示（JS実行前） -->
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; color: #ff4757; font-family: sans-serif;">
+      <div style="width: 40px; height: 40px; border: 4px solid #ff4757; border-top-color: transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+      <p style="margin-top: 20px; font-weight: bold;">LOADING NOSE...</p>
+    </div>
+  </div>
+
+  <style>
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+
+  <!-- Game Logic -->
+  <script type="text/babel" src="js/game.js"></script>
+</body>
+</html>
